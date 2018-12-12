@@ -87,7 +87,7 @@ function specialCheck(check){
       
     let char_num = check.charCodeAt(a);
 
-    if(char_num >= 33 && char_num <= 47,char_num >=58 && char_num <= 64, char_num >= 91 && <= 96, char_num >= 123 && char_num <= 126){
+    if(char_num >= 33 && char_num <= 47 || char_num >= 58 && char_num <= 64 || char_num >= 91 && <= 96 || char_num >= 123 && char_num <= 126){
         return true;
     }
 
@@ -107,7 +107,7 @@ function specialCheck(check){
 
 
 function passedAllChecks(){
-
+  return lengthCheck(password)&&upperCaseCheck(password)&&lowerCaseCheck(password)&&numberCheck(password)&&specialCheck(check)
 }
 
 
@@ -120,6 +120,19 @@ function passedAllChecks(){
 
 //returns a string which represents the grade for your password
 function grade(password){
-
-
+  if(password.length >= 8){
+    return "very bad"
+  }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
