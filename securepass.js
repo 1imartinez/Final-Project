@@ -123,15 +123,25 @@ function grade(password){
   if(!lengthCheck(password)){
     return "very bad"
   }
+
   if(!(upperCaseCheck(password)&&lowerCaseCheck(password))){
     return "bad"
   }
+
   if(!numberCheck(password)){
     return "okay"
   }  
+
   if(!specialCheck(check)){
     return "good"
   }
-  if()
+
+  if(lengthCheck(password)&&upperCaseCheck(password)&&lowerCaseCheck(password)&&numberCheck(password)&&specialCheck(check)){
+    return "great"
+  }
+  
+  if(lengthCheck(password)&&upperCaseCheck(password)&&lowerCaseCheck(password)&&numberCheck(password)&&specialCheck(check); passwork.length >= 20){
+    return "super"
+  }
 }
 
